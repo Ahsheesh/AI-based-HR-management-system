@@ -35,7 +35,7 @@ body {
     gap: 19px;
 }
 
-.logo {
+#logo {
     width: 54px;
     height: 56px;
     background: #D0EDE7;
@@ -45,6 +45,7 @@ body {
     justify-content: center;
     font-size: 24px;
 }
+
 
 .title {
     color: #333333;
@@ -56,8 +57,8 @@ body {
 
 /* Greeting */
 .greeting {
-    left: 1067px;
-    top: 30px;
+    left: 1024px;
+    top: 20px;
     position: absolute;
     color: #555555;
     font-size: 64px;
@@ -89,6 +90,9 @@ body {
     height: 60px; /* Adjusted for balanced spacing */
 }
 
+.nav-time {
+    margin-top: 80%;
+}
 /* Time display in the sidebar */
 .time-display {
     position: absolute;
@@ -142,16 +146,16 @@ body {
 }
 
 /* Individual Card Positions */
-.current-task-card { width: 685px; height: 339px; left: 318px; top: 157px; }
-.attendance-card { width: 353px; height: 339px; left: 1033px; top: 157px; }
-.today-card { width: 460px; height: 396px; left: 318px; top: 522px; }
-.plans-card { width: 579px; height: 396px; left: 819px; top: 522px; }
-.time-bar { width: 1080px; height: 49px; left: 318px; top: 944px; }
+.current-task-card { width: 685px; height: 339px; left: 318px; top: 152px; }
+.attendance-card { width: 353px; height: 339px; left: 1033px; top: 152px; }
+.today-card { width: 460px; height: 396px; left: 318px; top: 510px; }
+.plans-card { width: 579px; height: 396px; left: 819px; top: 510px; }
+.time-bar { width: 1080px; height: 49px; left: 318px; top: 920px; }
 
 
 /* Title Overlays */
 .title-overlay {
-    position: absolute;
+    position: relative;
     color: #333333;
     font-size: 40px;
     font-family: 'Inter', sans-serif;
@@ -159,10 +163,10 @@ body {
 }
 
 /* Individual Title Positions */
-.current-task-title { left: 345px; top: 202px; }
+/* .current-task-title { left: 345px; top: 202px; }
 .attendance-title { left: 1061px; top: 193px; }
 .today-title { left: 355px; top: 573px; }
-.plans-title { left: 858px; top: 570px; }
+.plans-title { left: 858px; top: 570px; } */
 
 
 /* Responsive design using transform:scale to preserve layout */
