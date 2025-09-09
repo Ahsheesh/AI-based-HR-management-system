@@ -1,0 +1,367 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  background: #e2f8f3;
+  box-sizing: border-box;
+  width: 100%;
+    height: 100%;
+}
+
+.window-1 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 110px;
+  margin: 42px 115px 926px 85px;
+}
+
+.navbar {
+  display: flex;
+  width: 100vw;
+  height: 56px;
+  align-items: center;
+  gap: 180px;
+}
+
+.product-name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#logo {
+  width: 54px;
+  height: 56px;
+}
+
+#company-name {
+  color: #000;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+  font-family: Halant;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.016px;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  flex-direction: row;
+  margin-left: 200px;
+  margin-right: 200px;
+  box-sizing: border-box;
+}
+
+.navlinks {
+  color: #000;
+  font-family: "Encode Sans Expanded";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.008px;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbutton {
+  display: flex;
+  padding: 10px 24px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: #00a69c;
+  color: #fff;
+}
+
+.hero-subtext {
+  display: flex;
+  flex-direction: column;
+  width: 677px;
+  height: 307px;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.hero {
+  position: absolute;
+  top: 16px;
+  color: #000;
+  font-family: Halant;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: 0.027px;
+}
+
+#powered {
+  color: #000;
+  font-family: Halant;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: 0.026px;
+}
+
+#HR {
+  color: #000;
+  font-family: Halant;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.026px;
+}
+
+.subhero {
+  position: relative;
+  flex-direction: column-reverse;
+  color: #000;
+  font-family: Halant;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 56px; 
+  letter-spacing: 0.014px;
+}
+
+.get-started {
+  display: flex;
+  width: 378px;
+  height: 68px;
+  padding: 18px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #00a69c;
+  color: #e2f8f3;
+}
+
+#product-img {
+  width: 354px;
+  height: 355px;
+  flex-shrink: 0;
+}
+
+.image {
+  display: flex;
+}

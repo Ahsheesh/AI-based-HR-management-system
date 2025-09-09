@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+       
+    <meta charset="UTF-8" />
+
+       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+       
+    <title>Mini Project Dashboard</title>
+
+       
+    <link
+      href="https://fonts.googleapis.com/css2?family=Halant:wght@400&family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/dashboard.css">
+  </head>
+
+  <body>
+       
+    <div class="container">
+             
+      <!-- Header -->
+
+             
+      <div class="header">
+                   
+        <div class="logo">📊</div>
+
+                   
+        <div class="title">Mini Project</div>
+
+               
+      </div>
+
+             
+      <!-- Greeting -->
+
+             
+      <div class="greeting">Hello, Guest</div>
+
+             
+      <!-- Sidebar Navigation -->
+
+             
+      <div class="sidebar">
+                   
+        <div class="nav-item nav-onboard">Onboard</div>
+
+                   
+        <div class="nav-item nav-analysis">Analysis</div>
+
+                   
+        <div class="nav-item nav-allocate">Allocate</div>
+
+                   
+        <div class="nav-item nav-email">Email</div>
+
+                   
+        <div class="nav-item nav-call">Call</div>
+
+                   
+        <div class="nav-item nav-employees">Employees</div>
+
+                   
+        <div class="nav-item nav-account">Account</div>
+
+                   
+        <div class="nav-item nav-time">Time</div>
+
+               
+      </div>
+
+             
+      <!-- Main Content Cards -->
+
+             
+      <!-- Current Task Card -->
+
+             
+      <div class="card current-task-card">
+                   
+        <div class="card-content">
+                         
+          <div class="card-placeholder">
+                                Current task content goes here                
+          </div>
+
+                     
+        </div>
+
+               
+      </div>
+
+             
+      <div class="current-task-title">Current task</div>
+
+             
+      <!-- Attendance Card -->
+
+             
+      <div class="card attendance-card">
+                   
+        <div class="card-content">
+                         
+          <div class="card-placeholder">
+                                Attendance data                
+          </div>
+
+                     
+        </div>
+
+               
+      </div>
+
+             
+      <div class="attendance-title">Attendance</div>
+
+             
+      <!-- Today Card -->
+
+             
+      <div class="card today-card">
+                   
+        <div class="card-content">
+                         
+          <div class="card-placeholder">
+                                Today's schedule                
+          </div>
+
+                     
+        </div>
+
+               
+      </div>
+
+             
+      <div class="today-title">Today</div>
+
+             
+      <!-- Plans Card -->
+
+             
+      <div class="card plans-card">
+                   
+        <div class="card-content">
+                         
+          <div class="card-placeholder">
+                                Upcoming plans                
+          </div>
+
+                     
+        </div>
+
+               
+      </div>
+
+             
+      <div class="plans-title">Plans</div>
+
+             
+      <!-- Bottom Time Bar -->
+
+             
+      <div class="card time-bar"></div>
+
+         
+    </div>
+
+       
+    <script>
+      // Add click handlers for navigation items
+
+      document.querySelectorAll(".nav-item").forEach((item) => {
+        item.addEventListener("click", function () {
+          console.log("Navigating to:", this.textContent); // Add your navigation logic here
+        });
+      }); // Add subtle hover effects to cards
+
+      document.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("mouseenter", function () {
+          this.style.transform = "translateY(-2px)";
+
+          this.style.boxShadow = "-6px -6px 12px rgba(0, 0, 0, 0.3)";
+
+          this.style.transition = "all 0.3s ease";
+        });
+
+        card.addEventListener("mouseleave", function () {
+          this.style.transform = "translateY(0px)";
+
+          this.style.boxShadow = "-4px -4px 8px rgba(0, 0, 0, 0.25)";
+        });
+      }); // Update time display
+
+      function updateTime() {
+        const now = new Date();
+
+        const timeString = now.toLocaleTimeString(); // You can add actual time display to the time bar here
+      }
+
+      setInterval(updateTime, 1000);
+
+      updateTime();
+    </script>
+  </body>
+</html>
