@@ -2,6 +2,7 @@
   "name": "mini-project-root",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "node server/server.js",
     "install-all": "npm install && cd client && npm install && cd ../server && npm install",
